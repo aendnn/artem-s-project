@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/custom-select.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="img/favicons" sizes="32x32" href="img/32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/32x32.png">
 </head>
 
 <body class="page-body">
@@ -58,7 +58,7 @@
                 <span class="visually-hidden">Поиск</span></button>
               <form class="form-search" action="https://echo.htmlacademy.ru" method="POST">
                 <label class="search-label visually-hidden" for="search">Поиск</label>
-                <input class="user-navigation-input search-input" type="search" name="search" id="search" placeholder="Крем-брюле" required>
+                <input class="user-navigation-input search-input" type="search" name="search" autocomplete="off" id="search" placeholder="Крем-брюле" required>
               </form>
             </div>
             <div class="user-navigation-login">
@@ -72,11 +72,11 @@
               <form class="form-login" action="https://echo.htmlacademy.ru" method="POST">
                 <p class="sign-block">
                   <label class="email-label visually-hidden" for="email">введите ваш emal</label>
-                  <input class="user-navigation-input email-input" type="email" name="email" id="email" placeholder="email@example.com" required>
+                  <input class="user-navigation-input email-input" type="email" name="email" autocomplete="off" id="email" placeholder="email@example.com" required>
                 </p>
                 <p class="sign-block">
                   <label class="password-label visually-hidden" for="password">введите ваш пароль</label>
-                  <input class="user-navigation-input password-input" type="password" name="password" id="password" placeholder="......" required>
+                  <input class="user-navigation-input password-input" type="password" name="password" autocomplete="off" id="password" placeholder="......" required>
                 </p>
                 <div class="form-user-button">
                   <button class="button user-navigation-login-button" type="submit">Войти</button>
@@ -163,36 +163,6 @@
               <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
-              <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="catalog-breadcrumbs-item">
               <a class="catalog-breadcrumbs-link" href="blank.html">Каталог</a>
             </li>
             <li class="catalog-breadcrumbs-item">
@@ -230,15 +200,15 @@
               <fieldset class="filter-group fat-group">
                 <legend class="filters-title">Жирность:</legend>
                 <p class="fat-text">
-                  <input type="radio" name="fat" id="fat-1" value="0%" class="real-radio visually-hidden">
+                  <input type="radio" name="fat" id="fat-1" value="0%" class="real-radio visually-hidden" checked>
                   <label class="filter-fat" for="fat-1"><span class="custom-radio"></span>0%</label>
                 </p>
                 <p class="fat-text">
-                  <input type="radio" name="fat" id="fat-2" value="до 10%" checked class="real-radio visually-hidden">
+                  <input type="radio" name="fat" id="fat-2" value="до 10%" class="real-radio visually-hidden" checked disabled>
                   <label class="filter-fat" for="fat-2"><span class="custom-radio"></span>до 10%</label>
                 </p>
                 <p class="fat-text">
-                  <input type="radio" name="fat" id="fat-3" value="до 30%" class="real-radio visually-hidden">
+                  <input type="radio" name="fat" id="fat-3" value="до 30%" class="real-radio visually-hidden" disabled>
                   <label class="filter-fat" for="fat-3"><span class="custom-radio"></span>до 30%</label>
                 </p>
                 <p class="fat-text">
@@ -249,19 +219,19 @@
               <fieldset class="filter-group extender-group">
                 <legend class="filters-title">Наполнители:</legend>
                 <p class="extender-text">
-                  <input type="checkbox" name="Choco" id="extender-1" checked class="real-checkbox visually-hidden">
+                  <input type="checkbox" name="Choco" id="extender-1" checked disabled class="real-checkbox visually-hidden">
                   <label class="filter-extender" for="extender-1">шоколадные</label>
                 </p>
                 <p class="extender-text">
-                  <input type="checkbox" name="Sugar" id="extender-2" checked class="real-checkbox visually-hidden">
+                  <input type="checkbox" name="Sugar" id="extender-2" class="real-checkbox visually-hidden">
                   <label class="filter-extender" for="extender-2">сахарные присыпки</label>
                 </p>
                 <p class="extender-text">
-                  <input type="checkbox" name="fruits" id="extender-3" class="real-checkbox visually-hidden">
+                  <input type="checkbox" name="fruits" id="extender-3" disabled class="real-checkbox visually-hidden">
                   <label class="filter-extender" for="extender-3">фрукты</label>
                 </p>
                 <p class="extender-text">
-                  <input type="checkbox" name="Sirop" id="extender-4" class="real-checkbox visually-hidden">
+                  <input type="checkbox" name="Sirop" id="extender-4" disabled class="real-checkbox visually-hidden">
                   <label class="filter-extender" for="extender-4">сиропы</label>
                 <p class="extender-text">
                   <input type="checkbox" name="jam" id="extender-5" class="real-checkbox visually-hidden">
@@ -505,6 +475,7 @@
   </div>
   <script src="js/custom-select.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/filter.js"></script>
 </body>
 
 </html>
